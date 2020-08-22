@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <table>
+                <tr>
+                    <td><input type="text" name="show" id="output" value="0"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn2" value="(" onclick="display('(')">(</button>
+                        <button class="btn btn2" value=")" onclick="display(')')">)</button>
+                        <button class="btn btn2" value="" onclick="delete_entity()">CE</button>
+                        <button id = "clear" class="btn btn2" value="0" onclick="clearAll()">AC</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" value="7" onclick="display('7')">7</button>
+                        <button class="btn" value="8" onclick="display('8')">8</button>
+                        <button class="btn" value="9" onclick="display('9')">9</button>
+                        <button class="btn btn2" value="/" onclick="display('/')">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" value="4" onclick="display('4')">4</button>
+                        <button class="btn" value="5" onclick="display('5')">5</button>
+                        <button class="btn" value="6" onclick="display('6')">6</button>
+                        <button class="btn btn2" value="*" onclick="display('*')">x</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" value="1" onclick="display('1')">1</button>
+                        <button class="btn" value="2" onclick="display('2')">2</button>
+                        <button class="btn" value="3" onclick="display('3')">3</button>
+                        <button class="btn btn2" value="-" onclick="display('-')">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn3" value="" onclick="display('0')">0</button>
+                        <button class="btn btn3" value="." onclick="display('.')">.</button>
+                        <button class="btn btn1 btn3" value="=" onclick="result()">=</button>
+                        <button class="btn btn2 btn3" value="+" onclick="display('+')">+</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
